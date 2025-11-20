@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.headings}> Welcome to Planner/Learning App!</Text>
+      <Button
+        title="Matching Game"
+        onPress={() => Alert.alert('Matching Game', 'Matching Game button was tapped.')}
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -19,7 +23,7 @@ const styles = StyleSheet.create({
   },
 
   headings:{
-    fontSize: 80
+    fontSize: 80,
 
   }
   
